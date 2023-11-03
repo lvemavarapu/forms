@@ -1,0 +1,1 @@
+/Users/lvemavarapu/IdeaProjects/example/public/src/index.jsx

@@ -1,0 +1,96 @@
+*{
+    margin-top:24px;
+    text-align: center;
+}
+h2{
+text-align: left;
+}
+
+h3{
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+
+.form{
+    background-color: #d74646;
+    border-radius: 5px;
+    width: 550px;
+    margin: 20px auto;
+    padding: 20px;
+    /* height: 600px; */
+}
+
+.form-body{
+    text-align: left;
+    padding: 20px 10px;
+
+}
+
+.form-body > *{
+    padding: 5px;
+}
+
+.form__label{
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.form_input{
+    display: flex;
+    width: 256px;
+    height: 58px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+
+}
+
+.footer{
+    text-align: center;
+}
+input[type="text"]{
+    height: 90px;
+    width: 200px;
+}
+input[type="email"]{
+    height: 60px;
+    width: 200px;
+}
+[type="date"] {
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+    height: 50px;
+    width: 200px;
+}
+input[type="time"]{
+    height: 60px;
+    width: 200px;
+}
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+#test{
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+#date-time{
+    display: flex;
+    align-items: flex-start;
+    gap: 43px;
+    flex: 1 0 0;
+}
+div{
+display: flex;
+    align-items: flex-start;
+    gap: 43px;
+    flex: 1 0 0;
+}
