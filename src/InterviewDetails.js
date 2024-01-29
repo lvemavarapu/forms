@@ -1,6 +1,6 @@
 import React  from 'react';
 import { useForm } from "react-hook-form";
-import './interviewform.css';
+import './interviewdetails.css';
 import TextareaAutosize from 'react-textarea-autosize';
 
 
@@ -28,7 +28,7 @@ function InterviewDetails() {
                         <h3>Pre-Qualification Interview Questionnaire</h3>
                         <div id = "test">
                             <div className="interviewername">
-                                <label>Interviewer Name </label><br />
+                                <label>*Interviewer Name </label><br />
                                 <input className="form__input"
                                        type="text"
                                        {...register("interviewer name", {
@@ -44,7 +44,7 @@ function InterviewDetails() {
                         <br />
                         <div id = "test">
                             <div className="intervieweename">
-                                <label className="form__label" htmlFor="intervieweename">Interviewee Name </label><br />
+                                <label className="form__label" htmlFor="intervieweename">*Interviewee Name </label><br />
                                 <input className="form__input" type="text" id="firstName" placeholder="Interviewer Name" />
                             </div>
                             <div className="intervieweeposition">
@@ -77,31 +77,31 @@ function InterviewDetails() {
                         </div>
                         <div id = "test">
                             <div className="date">
-                                <label htmlFor="date">Date </label><br/>
+                                <label htmlFor="date">*Date</label><br/>
                                 <input type="date" name="date" id="date"></input>
                             </div>
                         </div>
                         <div id = "test">
                             <div className="starttime">
-                                <label htmlFor="starttime">Start Time</label><br />
+                                <label htmlFor="starttime">*Start Time</label><br />
                                 <input type="time"></input>
                             </div>
                             <div className="finishtime">
-                                <label htmlFor="starttime">Finish Time</label><br />
+                                <label htmlFor="starttime">*Finish Time</label><br />
                                 <input type="time"></input>
                             </div>
 
                         </div>
 
                         <div className="formInput">
-                            <label>Email</label><br />
+                            <label>*Email</label><br />
                             <input
                                 type="email"
                                 {...register("email", {
-                                    required: "*",
                                     pattern: {
                                         value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                                        message: "invalid email address"
+                                        message: "invalid email address",
+                                        required: "*"
                                     }
                                 })}
                                 placeholder="someone@email.com"
@@ -117,13 +117,13 @@ function InterviewDetails() {
                                         <option value="partime">Part-time</option>
                                         <option value="casual">Casual</option>
                                     </select>
-                                <label>Number of hours </label>
-                                <input className="form__input"
-                                       type="hours:minutes"
-                                       {...register("hours", {
-                                           required: "*"})}
-                                       placeholder="hours:minutes"
-                                />
+                                    <label>Number of hours </label>
+                                    <input className="form__input"
+                                           type="hours:minutes"
+                                           {...register("hours", {
+                                               required: "*"})}
+                                           placeholder="hours:minutes"
+                                    />
                         </div><br />
                         <br />
                         {/*TextareaAutosize is dynamic user can resize the textarea*/}
@@ -337,8 +337,41 @@ function InterviewDetails() {
                                     />{' '}
                                     No
                                 </label>
+                                <label>How many hours per month are you able to dedicate uninterrupted study,
+                                    training and assessment tasks??</label>
+                                <input className="form__input"
+                                       type="hours:minutes"
+                                       {...register("hours", {
+                                           required: "*"})}
+                                       placeholder="hours:minutes"
+                                />
+                                <br />
+                                <br />
+                                <br />
+
+                                <label> Any prior criminal convictions in Australia or internationally?</label>
+                                <br />
+                                <label>
+                                    <input
+                                        name="internet"
+                                        type="checkbox"
+                                        value="yes"
+                                        onChange={onChange}
+                                    />{' '}
+                                    Yes
+                                </label>{' '}
+                                <label>
+                                    <input
+                                        name="internet"
+                                        type="checkbox"
+                                        value="no"
+                                        onChange={onChange}
+                                    />{' '}
+                                    No
+                                </label>
+
                                 <label> Do you have have reasonable level of health and fitness
-                                    (as\ working in this industry can be physically demanding?</label>
+                                    (as working in this industry can be physically demanding?</label>
                                 <br />
                                 <label>
                                     <input
@@ -359,6 +392,16 @@ function InterviewDetails() {
                                     No
                                 </label>
                         </div>
+                            <div id="vaccination">
+                                <label>Vaccination details  </label><br/>
+                                <TextareaAutosize
+                                    name="COVID19, Influenza"
+                                    placeholder={"Vaccination details the field resizes as you type in the text area."}
+                                    type="textarea"
+                                    onChange={onChange}
+                                    required={true}
+                                />
+                            </div>
                             <div id="button">
                                 <button type="button" id ="submit">Submit</button>
                                 <button type="button">Cancel</button>

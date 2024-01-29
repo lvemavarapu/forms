@@ -1,0 +1,73 @@
+h6{
+    text-align: left;
+}
+
+label{
+    font-size: 12px;
+}
+
+.subheading{
+
+    font-size: 12px;
+    font-weight: bold;
+}
+[type="email"] {
+    width:300px;
+    height:30px;
+}
+
+[type="text"] {
+    width:300px;
+    height:30px;
+}
+.fontAwesome {
+    font-family: 'Helvetica', FontAwesome, sans-serif;
+}
+#home-work{
+    display: inline-flex;
+    align-items: flex-start;
+    /*& input[type="text"] {*/
+    /*    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;*/
+    /*    height:30px;*/
+    /*}*/
+}
+.mobile{
+   display:block;
+    margin-left: 20px;
+}
+#address{
+    display: flex;
+    align-items: flex-start;
+}
+#state{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 24px;
+    align-self: stretch;
+}
+#email{
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+#address{
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+select{
+    width:190px;
+    height:30px;
+}
+[aria-hidden="true"] {
+    display: none;
+}
+#contact-method{
+    display: block;
+    align-items: flex-start;
+}
+input[type="checkbox"]~label{
+    font-size:12px;
+}

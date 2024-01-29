@@ -1,0 +1,88 @@
+*{
+    margin-left:10px;
+    padding:2px;
+
+}
+#title-name{
+    display: inline-flex;
+    align-items: flex-start;
+
+}
+[type="text"]{
+    width:300px;
+    height:30px;
+}
+[type="checkbox"]{
+    padding:6px;
+}
+.select{
+    width:auto;
+    height:35px;
+}
+[type="date"] {
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+    height:30px;
+    align-items: center;
+}
+[type="date"]::-webkit-inner-spin-button {
+    display: block;
+    align-self: center;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+#DOB-Gender{
+    display:flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+#address{
+    display: flex;
+    align-items: flex-start;
+    /*margin-left:10px !important;*/
+}
+#state{
+    display: flex;
+    align-items: flex-start;
+    margin-left:10px !important;
+}
+.postcode input[type="text"]{
+    width:100px !important;
+}
+#work{
+    margin-left:10px !important;
+    display: flex;
+    align-items: flex-start;
+}
+#email{
+    margin-left:10px!important;
+    display: flex;
+    align-items: flex-start;
+}
+span{
+    color:grey;
+    font-size: 8px;
+}
+#typography-text{
+    margin-left:10px!important;
+    display: block;
+}
+#course{
+    display: flex;
+    align-items: flex-start;
+    gap:8px;
+}
+input[type="button"]{
+    width:200px;
+    height:30px;
+    background-color: blue;
+    color:white;
+    padding:4px;
+}
+#credit-transfer-note{
+    height:60px;
+    overflow:hidden;
+    width:650px;
+    white-space:normal;
+    padding:4px;
+}
