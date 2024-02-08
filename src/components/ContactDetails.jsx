@@ -20,10 +20,7 @@ function ContactDetails(){
                     <input type="text" placeholder="HomePhone"
                         />
                     <br />
-                    <TextField id="filled-basic" label="Filled" variant="filled"/>
-                    <TextField id="standard-basic" label="Standard" variant="standard"/>
-                    <TextField id="standard-basic" label="Standard" variant="standard"/>
-                </div>
+                   </div>
                 <div className="workphone">
                     <label>Work Phone</label><br />
                     <input type="text" id="phone" placeholder="WorkPhone"/>

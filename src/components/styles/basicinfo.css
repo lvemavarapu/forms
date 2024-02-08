@@ -1,7 +1,18 @@
 *{
-    margin-left:10px;
     padding:2px;
+    max-width: 1000px;
+    margin: auto;
+ 
 
+}
+label{
+
+    font-size:14px;
+    font-weight:bold;
+}
+#given-name{
+    display:flex;
+    flex-direction:row;
 }
 #title-name{
     display: inline-flex;
@@ -13,16 +24,18 @@
     height:30px;
 }
 [type="checkbox"]{
-    padding:6px;
+    padding:2px;
 }
-.select{
-    width:auto;
-    height:35px;
+select{
+    background-color: bisque;
+    border: 2px solid black;
+
 }
 [type="date"] {
     background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
     height:30px;
     align-items: center;
+
 }
 [type="date"]::-webkit-inner-spin-button {
     display: block;

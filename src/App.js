@@ -1,4 +1,5 @@
 import './App.css';
+import Display from "./Display";
 import PersonalDetails from "./components/AllAgedCare/PersonalDetails";
 // import react from "react";
 // import BasicInfo from "./components/BasicInfo";
@@ -10,6 +11,7 @@ import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import CourseDetails from "./components/AllAgedCare/CourseDetails";
 import EducationDetails from "./components/AllAgedCare/EducationDetails";
 import StudyUSIFee from "./components/AllAgedCare/StudyUSIFee";
+import Accordion from "@mui/material/Accordion";
 
 
 
@@ -17,11 +19,12 @@ import StudyUSIFee from "./components/AllAgedCare/StudyUSIFee";
 function App() {
   return (
       <>
+        <Display />
 {/*<PersonalDetails />*/}
 {/*/!*         <InterviewDetails />*!/*/}
 {/*        <EmploymentDetails />*/}
 {/*          <OtherPersonalDetails />*/}
-<AAC />
+{/*<AAC />*/}
 {/*        <CourseDetails />*/}
 {/*        <EducationDetails />*/}
 {/*        <StudyUSIFee />*/}
