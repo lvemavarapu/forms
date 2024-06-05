@@ -6,7 +6,7 @@ function BasicInfo(){
     return(
         <>
         {/*<h5>Basic Information</h5>*/}
-            <div id ="title-name">
+            <div id ="title">
                 <div className="title">
                     <label>Title</label><br/>
                     <select>
@@ -18,8 +18,8 @@ function BasicInfo(){
                 </div>
                 <br/>
                 <div className="given-name">
-                    <label className="form__label" htmlFor="given-name">*Given Name </label><br/>
-                    <input className="form__input" type="text" id="givenname" placeholder="Given Name" />
+                    <label className="form__label" htmlFor="given-name">Given Name </label><br/>
+                    <input className="form__input" type="text" id="givenname" placeholder="Given Name" required />
                 </div>
                 <div className="familyname">
                     <label className="form__label" htmlFor="familyname">Family Name </label><br/>
@@ -28,7 +28,7 @@ function BasicInfo(){
             </div>
 
                 <div className="date of birth">
-                    <label htmlFor="date">*Date of Birth</label><br/>
+                    <label htmlFor="date">Date of Birth</label><br/>
                     <input type="date" name="date" id="date"></input>
                 </div><br/>
                 <div className="gender">

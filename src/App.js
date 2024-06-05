@@ -12,6 +12,7 @@ import CourseDetails from "./components/AllAgedCare/CourseDetails";
 import EducationDetails from "./components/AllAgedCare/EducationDetails";
 import StudyUSIFee from "./components/AllAgedCare/StudyUSIFee";
 import Accordion from "@mui/material/Accordion";
+import AccordionUsage from "./components/Accordion/AccordionUsage";
 
 
 
@@ -19,7 +20,10 @@ import Accordion from "@mui/material/Accordion";
 function App() {
   return (
       <>
-        <Display />
+          <div className="top-nav">
+              <h4>welcome to the home page</h4>
+          </div>
+      <AccordionUsage />
 {/*<PersonalDetails />*/}
 {/*/!*         <InterviewDetails />*!/*/}
 {/*        <EmploymentDetails />*/}

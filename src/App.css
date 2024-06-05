@@ -1,8 +1,17 @@
-.App {
-    text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+/*.App {*/
+/*    text-align: center;*/
+/*}*/
 
 .App-logo {
     height: 40vmin;
     pointer-events: none;
+}
+body{
+    background-color: lightgray;
+}
+.top-nav{
+    width:100% !important;
+    height:80px;
+    background-color:lightsteelblue;
 }

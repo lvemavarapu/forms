@@ -11,9 +11,9 @@ function ContactDetails(){
         formState: { errors } } = useForm();
     return (
         <>
-            <p class ="subheading">
+            <h4>
                 Contact details
-            </p>
+           </h4>
             <div id = "home-work">
                 <div className="home-phone">
                     <label>Home Phone</label><br />
@@ -29,22 +29,22 @@ function ContactDetails(){
 
 
                 <div className="mobile">
-                    <label>*Mobile Phone</label><br />
-                    <input type="text" placeholder="Mobile Number"/>
+                    <label>Mobile Phone</label><br />
+                    <input type="text" placeholder="Mobile Number" required/>
                 </div>
 
+                    <div id ="email-address">
+                            <div id="email">
+                                <label>Email</label><br />
+                                <input type="email" id="email" placeholder="soneone@email.com"/>
+                            </div>
 
-        <div id = "email">
-            <div className="email">
-                <label>*Email</label><br />
-                <input
-                    type="email" placeholder="someone@email.com"  />
+                    <div id="alternamemail">
+                        <label>Alternate Email</label><br />
+                        <input type="email" placeholder="someone@email.com"/>
+                    </div>
             </div>
-            <div className="email">
-                <label>Alternate Email</label><br />
-                <input type="email" placeholder="someone@email.com"  />
-            </div>
-        </div>
+
         </>
     )
 }

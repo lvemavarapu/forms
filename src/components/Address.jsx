@@ -14,9 +14,9 @@ function Address() {
         formState: { errors } } = useForm();
     return (
         <>
-            <p class ="subheading"> Residential Address</p>
+           <h4> Residential Address</h4>
         <div id="address">
-             <div className="raddress">
+             <div className="r-address">
                 <label>Residential Address</label><br/>
                 <input type="text" id="suburb" placeholder="Address"
                        {...register("suburb", {
@@ -39,8 +39,9 @@ function Address() {
                 {errors.suburb && errors.suburb.message}
             </div>
         </div>
+            <br/>
 
-            <div id ="state">
+            <div id ="state-postcode">
                 <div className="state">
                     <label>State</label><br />
                     <select>
@@ -67,8 +68,9 @@ function Address() {
                 </div>
             </div>
 
-            <p className ="subheading"> Postal Address</p>
-            <div id="postal">
+            <h4> Postal Address</h4>
+            <div id ="postal-residential">
+            <div className="address">
                 <input
                     type="radio"
                     value="different"
@@ -81,9 +83,9 @@ function Address() {
                 <div aria-hidden={selected !== "different" ? true : false}>
                     <br/>
                     <div id="address">
-                        <div className="address">
-                            <label>Postal Address</label><br/>
-                            <input type="text" id="address" placeholder="Address"
+                        <div className="r-address">
+                            <label>Residential Address</label><br/>
+                            <input type="text" id="suburb" placeholder="Address"
                                    {...register("suburb", {
                                        pattern: {
                                            required: "*"
@@ -105,7 +107,7 @@ function Address() {
                         </div>
                     </div>
 
-                    <div id ="state">
+                    <div id ="state-postcode">
                         <div className="state">
                             <label>State</label><br />
                             <select>
@@ -117,7 +119,6 @@ function Address() {
                                 <option value="WA">WA</option>
                                 <option value="NT">NT</option>
                                 <option value="Tas">TAS</option>
-
                             </select>
                         </div>
                         <div className="postcode">
@@ -144,9 +145,10 @@ function Address() {
                 />
                 <label>Same as residential address</label>
             </div>
-
+            </div>
+            <h4>Preferred contact method</h4><br/>
             <div id ="contact-method">
-                <label>Preferred contact method</label><br/>
+
             <label>
                 <input
                     name="qual"

@@ -1,34 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 *{
     padding:2px;
-    max-width: 1000px;
+    max-width: 800px;
     margin: auto;
- 
+    align-content: center;
 
+}
+h1,h2,h3,h4,h5,h6{
+    margin-top:24px;
+    font-family: 'Lato', SansSerif, serif;
 }
 label{
-
-    font-size:14px;
-    font-weight:bold;
-}
+    font-size:16px !important;
+    font-family: 'Lato', SansSerif, serif;
+      }
 #given-name{
     display:flex;
     flex-direction:row;
 }
-#title-name{
+#title{
     display: inline-flex;
     align-items: flex-start;
+    width:auto;
+    height:auto;
 
 }
 [type="text"]{
-    width:300px;
-    height:30px;
+    width:auto;
+    height:auto;
 }
 [type="checkbox"]{
     padding:2px;
 }
-select{
-    background-color: bisque;
-    border: 2px solid black;
+[type="select"]{
+    border: 2px solid lightgray;
+    width:auto;
+    height:auto;
+    padding:4px;
+
 
 }
 [type="date"] {
@@ -45,40 +54,33 @@ select{
     opacity: 0;
 }
 #DOB-Gender{
-    display:flex;
-    align-items: flex-start;
-    flex-direction: row;
+    display:inline-flex;
+
 }
 #address{
     display: flex;
     align-items: flex-start;
-    /*margin-left:10px !important;*/
+
 }
 #state{
     display: flex;
     align-items: flex-start;
-    margin-left:10px !important;
+
 }
-.postcode input[type="text"]{
-    width:100px !important;
-}
+
 #work{
-    margin-left:10px !important;
+
     display: flex;
     align-items: flex-start;
 }
-#email{
-    margin-left:10px!important;
-    display: flex;
-    align-items: flex-start;
-}
+/*#email{*/
+
+/*    display: flex;*/
+/*    align-items: flex-start;*/
+/*}*/
 span{
     color:grey;
     font-size: 8px;
-}
-#typography-text{
-    margin-left:10px!important;
-    display: block;
 }
 #course{
     display: flex;
@@ -91,6 +93,7 @@ input[type="button"]{
     background-color: blue;
     color:white;
     padding:4px;
+    font-family: 'Lato', SansSerif, serif;
 }
 #credit-transfer-note{
     height:60px;
@@ -98,4 +101,8 @@ input[type="button"]{
     width:650px;
     white-space:normal;
     padding:4px;
+}
+.sigCanvas{
+    border:2px solid black;
+
 }

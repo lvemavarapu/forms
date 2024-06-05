@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import BasicInfo from "../BasicInfo";
 import ContactDetails from "../ContactDetails";
 import Address from "../Address";
+import Button from "@mui/material/Button";
 
 function PersonalDetails() {
     const [formData, setFormData] = useState({
@@ -12,15 +13,17 @@ function PersonalDetails() {
 
     const handlePersonalInfoChange = (basicInfo) => {
         setFormData({ ...formData, basicInfo });
+        console.log("Form Data:", formData);
     };
 
     const handleAddressInfoChange = (addressInfo) => {
         setFormData({ ...formData, addressInfo });
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("Form Data:", formData);
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log("Submitted");
+
     };
 
     return (
@@ -31,6 +34,8 @@ function PersonalDetails() {
                     <BasicInfo onChange={handlePersonalInfoChange} />
                     <ContactDetails onChange={handleAddressInfoChange} />
                         <Address onChange={handleAddressInfoChange}  />
+                        <Button>Cancel</Button>
+                        <Button type={"submit"}>Save</Button>
 
                 </div>
                 </form>
