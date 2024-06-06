@@ -1,0 +1,11 @@
+.footer{
+    width:100%;
+    height:100px;
+    background-color: beige;
+    position:absolute;
+    bottom:0;
+}
+h5{
+    display:flex;
+    justify-content: center;
+}

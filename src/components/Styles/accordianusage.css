@@ -1,0 +1,14 @@
+#layout{
+
+    max-width:620px;
+    padding: 24px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+   }
+p{
+   color: azure;
+    font-size: medium;
+    font-weight: bold;
+
+}

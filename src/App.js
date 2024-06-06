@@ -1,12 +1,30 @@
-import logo from './logo.svg';
+
 import './App.css';
-import PersonalDetails from "./Components/PersonalDetails"
+import AccordionUsage  from "./components/AccordionUsage";
+import Footer from "./Layout/Footer";
+import Header from "./Layout/Header";
+import Gallery from "./pages/Gallery";
+import Signup from "./pages/Signup";
+import {Route, Routes} from "react-router-dom";
+import About from "./pages/About";
+import React from "react";
+
+
+
 
 function App() {
   return (
-    <div className="App">
-     <PersonalDetails />
-    </div>
+    <>
+        <Header />
+        <Routes>
+            <Route path="/about" element={<About />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/signup" element={<Signup />} />
+        </Routes>
+     {/*<AccordionUsage/>*/}
+
+      <Footer />
+    </>
   );
 }
 
