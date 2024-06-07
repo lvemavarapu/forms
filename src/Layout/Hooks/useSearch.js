@@ -22,6 +22,4 @@ function useSearch() {
         </div>
     );
 }
-
-
 export default useSearch;
