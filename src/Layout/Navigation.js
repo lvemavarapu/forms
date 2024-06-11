@@ -18,6 +18,7 @@ const Navigation = () => {
                 <Link to="/about" activeStyle >About</Link>&nbsp;&nbsp;
                 <Link to="/gallery">Gallery</Link>&nbsp;&nbsp;
                 <Link to="/signup">Signup</Link>&nbsp;&nbsp;
+                <Link to="/team">Team</Link>&nbsp;&nbsp;
             </Grid>
         </>
     );

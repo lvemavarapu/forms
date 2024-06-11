@@ -7,18 +7,18 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import './gallery.css';
-import Pagination from '@mui/material/Pagination';
-import Stack from '@mui/material/Stack';
 import travel from '../assets/travel.png';
+import {Pagination} from "@mui/material";
 
 export default function Gallery() {
-    // const navigate = useNavigate();
-    // const toNewPage=()=>{
-    //     navigate("/travel");
-    // }
+           const [page, setPage] = React.useState(1);
+          const handleChange = (event, value) => {
+        setPage(value);
+    };
+
     return (
         <>
-            <Grid container spacing={6}
+              <Grid container spacing={6}
                   justifyContent="center"
                   alignItems="center">
                 <Grid item md={3}>
@@ -188,9 +188,10 @@ export default function Gallery() {
                     </Card>
                 </Grid>
             </Grid>
-            <Stack spacing={2} justifyContent="center" alignItems="center">
-                <Pagination count={10} />
-            </Stack>
+           <Pagination count={4}
+                       itemsPerPage={3}
+                       onChange={e => handleChange(e)} />
+
         </>
     );
 }

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Button from '@mui/material/Button';
+import Gender from "../components/Gender";
 
 
 export default function Signup() {
@@ -108,7 +109,7 @@ export default function Signup() {
                         {submitted && !values.email && (
                             <span id="email-error">Please enter an email address</span>
                         )}
-
+                        <Gender />
 
                         {!valid && (
                             <Grid item xs={12} spacing={12}>
