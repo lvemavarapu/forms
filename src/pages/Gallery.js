@@ -9,7 +9,7 @@ import Grid from '@mui/material/Grid';
 import './gallery.css';
 import travel from '../assets/travel.png';
 import {Pagination} from "@mui/material";
-
+import Chip from '@mui/joy/Chip';
 export default function Gallery() {
            const [page, setPage] = React.useState(1);
           const handleChange = (event, value) => {
@@ -32,14 +32,20 @@ export default function Gallery() {
                             <Typography gutterBottom variant="h5" component="div">
                                 Travel
                             </Typography>
+                            <Chip
+                                color="primary"
+                                disabled={false}
+                                variant="solid"
+                            >Online</Chip>
+
                             <Typography variant="body2" color="text.secondary">
                                 Lizards are a widespread group of squamate reptiles, with over 6,000
                                 species, ranging across all continents except Antarctica
                             </Typography>
                         </CardContent>
                         <CardActions>
-                            <Button size="small">Share</Button>
                             <Button size="small">Learn More</Button>
+                            <Button variant ="contained">Add to cart</Button>
 
                         </CardActions>
                     </Card>
@@ -62,7 +68,7 @@ export default function Gallery() {
                         </CardContent>
                         <CardActions>
                             <Button size="small">Share</Button>
-                            <Button size="small">Learn More</Button>
+                            <Button variant ="contained">Add to cart</Button>
                         </CardActions>
                     </Card>
                 </Grid>
@@ -84,7 +90,7 @@ export default function Gallery() {
                         </CardContent>
                         <CardActions>
                             <Button size="small">Share</Button>
-                            <Button size="small">Learn More</Button>
+                            <Button variant ="contained">Add to cart</Button>
                         </CardActions>
                     </Card>
                 </Grid>
@@ -112,7 +118,7 @@ export default function Gallery() {
                         </CardContent>
                         <CardActions>
                             <Button size="small">Share</Button>
-                            <Button size="small">Learn More</Button>
+                            <Button variant ="contained">Add to cart</Button>
                         </CardActions>
                     </Card>
                 </Grid>
@@ -134,7 +140,7 @@ export default function Gallery() {
                         </CardContent>
                         <CardActions>
                             <Button size="small">Share</Button>
-                            <Button size="small">Learn More</Button>
+                            <Button variant ="contained">Add to cart</Button>
                         </CardActions>
                     </Card>
                 </Grid>
@@ -156,7 +162,7 @@ export default function Gallery() {
                         </CardContent>
                         <CardActions>
                             <Button size="small">Share</Button>
-                            <Button size="small">Learn More</Button>
+                            <Button variant ="contained">Add to cart</Button>
                         </CardActions>
                     </Card>
                 </Grid>
@@ -180,16 +186,16 @@ export default function Gallery() {
                                 species, ranging across all continents except Antarctica
                             </Typography>
                         </CardContent>
-                        <CardActions>
-                            <Button size="small">Share</Button>
-                            <Button size="small">Learn More</Button>
 
-                        </CardActions>
+                       <CardActions>
+                            <Button size="small">Learn More</Button>
+                            <Button variant ="contained" >Add to cart</Button>
+                       </CardActions>
                     </Card>
                 </Grid>
             </Grid>
            <Pagination count={4}
-                       itemsPerPage={3}
+                       // itemsPerPage={3}
                        onChange={e => handleChange(e)} />
 
         </>
