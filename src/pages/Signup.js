@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
-import Button from '@mui/material/Button';
 import Gender from "../components/Gender";
+import moment from "moment";
 
 
 export default function Signup() {
@@ -10,7 +9,8 @@ export default function Signup() {
     const [values, setValues] = useState({
         firstName: "",
         lastName: "",
-        email: ""
+        email: "",
+        gender:""
     });
     const handleInputChange = (event) => {
      event.preventDefault();
@@ -24,9 +24,10 @@ export default function Signup() {
     const [submitted, setSubmitted] = useState(false);
     const [valid, setValid] = useState(false);
 
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (values.firstName && values.lastName && values.email) {
+        if (values.firstName && values.lastName && values.email && values.gender) {
             setValid(true);
         }
         setSubmitted(true);
@@ -45,7 +46,7 @@ export default function Signup() {
                                     {" "}
                                     Welcome {values.firstName} {values.lastName}{" "}
                                 </h3>
-                                <div> Your registration was successful!</div>
+                                <div> Your registration was successful! on {moment().toString()}</div>
                             </div>
                         )}
                         {!valid && (
@@ -109,7 +110,13 @@ export default function Signup() {
                         {submitted && !values.email && (
                             <span id="email-error">Please enter an email address</span>
                         )}
-                        <Gender />
+
+                        {!valid && (
+                            <Gender />
+                        )}
+                        {/*{submitted && !values.gender && (*/}
+                        {/*    <span id="email-error">Please select a valid gender</span>*/}
+                        {/*)}*/}
 
                         {!valid && (
                             <Grid item xs={12} spacing={12}>
@@ -119,14 +126,10 @@ export default function Signup() {
                                 <button className="form-field" type="submit">
                                    Cancel
                                 </button>
-
                             </Grid>
-
-
                         )}
                     </form>
-
-                </Grid>
+                 </Grid>
                 </>
             )
 }

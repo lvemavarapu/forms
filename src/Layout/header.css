@@ -21,3 +21,8 @@
 #shopping-cart{
     float:right;
 }
+.local-time{
+    color:deeppink;
+    font-family: "Arial Black";
+    font-size: large;
+}
