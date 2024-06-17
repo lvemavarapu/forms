@@ -11,17 +11,19 @@ import travel from '../assets/travel.png';
 import {Pagination} from "@mui/material";
 import Chip from '@mui/joy/Chip';
 export default function Gallery() {
-           const [page, setPage] = React.useState(1);
-          const handleChange = (event, value) => {
+           const[page, setPage] = React.useState(1);
+
+           const handleChange = (event, value) => {
         setPage(value);
     };
 
     return (
         <>
-              <Grid container spacing={6}
+          <br />
+           <Grid container spacing={6}
                   justifyContent="center"
                   alignItems="center">
-                <Grid item md={3}>
+                  <Grid item>
                     <Card sx={{maxWidth: 345}}>
                         <CardMedia
                             sx={{height: 140}}
@@ -50,7 +52,7 @@ export default function Gallery() {
                         </CardActions>
                     </Card>
                 </Grid>
-                <Grid item md={3}>
+                 <Grid item>
                     <Card sx={{maxWidth: 345}}>
                         <CardMedia
                             sx={{height: 140}}
@@ -72,7 +74,7 @@ export default function Gallery() {
                         </CardActions>
                     </Card>
                 </Grid>
-                <Grid item md={3}>
+                <Grid item>
                     <Card sx={{maxWidth: 345}}>
                         <CardMedia
                             sx={{height: 140}}
@@ -98,9 +100,8 @@ export default function Gallery() {
 
             <br/>
             <br/>
-
             <Grid container spacing={6} justifyContent="center" alignItems="center">
-                <Grid item md={3}>
+                <Grid item>
                     <Card sx={{maxWidth: 345}}>
                         <CardMedia
                             sx={{height: 140}}
@@ -122,7 +123,7 @@ export default function Gallery() {
                         </CardActions>
                     </Card>
                 </Grid>
-                <Grid item md={3}>
+                <Grid item>
                     <Card sx={{maxWidth: 345}}>
                         <CardMedia
                             sx={{height: 140}}
@@ -144,7 +145,7 @@ export default function Gallery() {
                         </CardActions>
                     </Card>
                 </Grid>
-                <Grid item md={3}>
+                <Grid item>
                     <Card sx={{maxWidth: 345}}>
                         <CardMedia
                             sx={{height: 140}}
@@ -167,10 +168,12 @@ export default function Gallery() {
                     </Card>
                 </Grid>
                             </Grid>
+            <br/>
+              <br/>
             <Grid container spacing={6}
                   justifyContent="center"
                   alignItems="center">
-                <Grid item md={3}>
+                <Grid item>
                     <Card sx={{maxWidth: 345}}>
                         <CardMedia
                             sx={{height: 140}}
@@ -193,11 +196,12 @@ export default function Gallery() {
                        </CardActions>
                     </Card>
                 </Grid>
-            </Grid>
-           <Pagination count={4}
-                       // itemsPerPage={3}
-                       onChange={e => handleChange(e)} />
 
-        </>
+                          </Grid>
+            <Pagination count={4}
+                        itemsPerPage={3}
+                        onChange={e => handleChange(e)}   />
+        <br />
+            </>
     );
 }
