@@ -30,12 +30,11 @@ function PersonalDetails() {
     <>
                 <form onSubmit={handleSubmit}>
                     <div className="form-body">
-                        {/*<h4> Personal Details</h4>*/}
                     <BasicInfo onChange={handlePersonalInfoChange} />
                     <ContactDetails onChange={handleAddressInfoChange} />
-                        <Address onChange={handleAddressInfoChange}  />
-                        <Button>Cancel</Button>
-                        <Button type={"submit"}>Save</Button>
+                    <Address onChange={handleAddressInfoChange}  />
+                    <Button>Cancel</Button>
+                    <Button type={"submit"}>Save</Button>
 
                 </div>
                 </form>

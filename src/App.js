@@ -21,7 +21,7 @@ function App() {
   return (
       <>
           <div className="top-nav">
-              <h4>welcome to the home page</h4>
+              <h4>Enrolment Form</h4>
           </div>
       <AccordionUsage />
 {/*<PersonalDetails />*/}

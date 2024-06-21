@@ -79,8 +79,8 @@ function Address() {
                     name="address"
                     onChange={changeHandler}
                 />
-                <label>Different from residential address</label><br/>
-                <div aria-hidden={selected !== "different" ? true : false}>
+                <label>Different from residential address</label>&nbsp;&nbsp;
+                <div aria-hidden={selected !== "different"}>
                     <br/>
                     <div id="address">
                         <div className="r-address">
@@ -146,9 +146,8 @@ function Address() {
                 <label>Same as residential address</label>
             </div>
             </div>
-            <h4>Preferred contact method</h4><br/>
+            <h4>Preferred contact method</h4>
             <div id ="contact-method">
-
             <label>
                 <input
                     name="qual"

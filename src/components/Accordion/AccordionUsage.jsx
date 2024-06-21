@@ -11,10 +11,12 @@ import  Signature  from "../Signature/Signature";
 import "../styles/basicinfo.css";
 
 
+
 export default function AccordionUsage() {
 
         return (
         <div>
+
             <Accordion>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
@@ -132,6 +134,7 @@ export default function AccordionUsage() {
 
                 </AccordionActions>
             </Accordion>
+
         </div>
     );
 }

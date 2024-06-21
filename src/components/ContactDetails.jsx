@@ -27,7 +27,6 @@ function ContactDetails(){
                 </div>
             </div>
 
-
                 <div className="mobile">
                     <label>Mobile Phone</label><br />
                     <input type="text" placeholder="Mobile Number" required/>
@@ -36,7 +35,7 @@ function ContactDetails(){
                     <div id ="email-address">
                             <div id="email">
                                 <label>Email</label><br />
-                                <input type="email" id="email" placeholder="soneone@email.com"/>
+                                <input type="email" id="email" placeholder="someone@email.com"/>
                             </div>
 
                     <div id="alternamemail">

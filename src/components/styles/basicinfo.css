@@ -4,15 +4,15 @@
     max-width: 800px;
     margin: auto;
     align-content: center;
+    font-family: 'Lato', SansSerif, serif;
 
 }
 h1,h2,h3,h4,h5,h6{
     margin-top:24px;
-    font-family: 'Lato', SansSerif, serif;
 }
 label{
     font-size:16px !important;
-    font-family: 'Lato', SansSerif, serif;
+
       }
 #given-name{
     display:flex;
@@ -27,23 +27,18 @@ label{
 }
 [type="text"]{
     width:auto;
-    height:auto;
+    height:40px;
+    padding:4px 4px 4px 6px;
 }
 [type="checkbox"]{
     padding:2px;
 }
-[type="select"]{
-    border: 2px solid lightgray;
-    width:auto;
-    height:auto;
-    padding:4px;
-
-
-}
 [type="date"] {
     background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
-    height:30px;
+    height:40px;
+    width:157px;
     align-items: center;
+    border: 1px solid lightgrey;
 
 }
 [type="date"]::-webkit-inner-spin-button {
@@ -65,7 +60,6 @@ label{
 #state{
     display: flex;
     align-items: flex-start;
-
 }
 
 #work{
@@ -93,8 +87,7 @@ input[type="button"]{
     background-color: blue;
     color:white;
     padding:4px;
-    font-family: 'Lato', SansSerif, serif;
-}
+  }
 #credit-transfer-note{
     height:60px;
     overflow:hidden;
@@ -102,7 +95,11 @@ input[type="button"]{
     white-space:normal;
     padding:4px;
 }
-.sigCanvas{
-    border:2px solid black;
-
+.sigCanvas {
+    border: 2px solid black;
+}
+    select{
+        height:40px;
+        border:1px solid lightgrey;
+        background-color:white;
 }
